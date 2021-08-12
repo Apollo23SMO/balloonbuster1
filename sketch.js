@@ -55,10 +55,10 @@ function draw() {
     if (select_balloon == 1) {
       redBalloon();
     }
-    else if (select_balloon == 3) {
+    else if (select_balloon == 2) {
       blueBalloon();
     }
-    else if (select_balloon == 2) {
+    else if (select_balloon == 3) {
       greenBalloon();
     }
     else if (select_balloon == 4) {
@@ -94,11 +94,12 @@ function redBalloon() {
 
 function blueBalloon() {
   //write code for spwaning blue balloons
-} var blue = createSprite(0, Math.round(random(20, 370)), 10, 10);
+var blue = createSprite(0, Math.round(random(20, 370)), 10, 10);
 blue.addImage(blue_balloonImage);
 blue.velocityX = 3;
 blue.lifetime = 150;
 blue.scale = 0.1;
+}
 
 
 
